@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styleshhet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- media -->
+    <link rel="stylesheet" href="media.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px 40px;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+header img{
+    width: 100%;
+ }
+header ul{
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+    position: relative;
+}
+.flt{
+    position: absolute;
+    top: 17px;
+    left: 250px;
+    background-color: red;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: .8em;
+    animation-name: hot;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes hot{
+    0%{
+        transform: rotatex(0deg);
+    }
+    100%{
+        transform: rotatex(180deg);
+    }
+}
+header ul li{
+    padding: 42px 15px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+header ul li a:hover{
+    color: red;
+}
+header .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .icons i{
+ padding: 10px 20px;
+}
+
+header .menu-bar{
+    display: none;
+}
+
+
+
+/* main1 */
+.main1{
+    height: 86vh;
+    background-color: #F0F0F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main1 .box1{
+    /* background-color: red; */
+    width: 850px;
+    height: 86vh;
+    /* background-color: red; */
+    padding: 190px 10px 190px 130px;
+    font-size: 20px;
+    font-family: "Josefin Sans",sans-serif;
+}
+.main1 .box1 h6{
+    font-size: 4em;
+padding-bottom: 20px;
+}
+.main1 .box1 p{
+    font-size: .8em;
+padding-bottom: 20px;
+line-height: 26px;
+}
+.main1 .box1 button{
+    padding: 10px 17px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background-color: #4a4a4b;
+    color: white;
+    border: none;
+
+}
+
+.main1 .box2{
+    /* background-color: yellow; */
+    width: 650px;
+    height: 86vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+.main1 .box2 img{
+    width: 45%;
+    animation: watch 2s infinite linear  alternate;
+    margin-left: 135px;
+    margin-top: 50px;
+}
+@keyframes watch{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+
+
+/* shop */
+.shop{
+    height: 86vh;
+    /* background-color: red; */
+}
+.shop .title{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    font-size: 16px;
+}
+.shop .title ul{
+    list-style: none;
+    display: flex;
+    font-family: sans-serif;
+}
+.shop .title ul li{
+    padding: 30px;
+}
+.shop .title ul li:hover{
+    color: red;
+}
+.shop .page{
+    font-size: 1.3em;
+}
+.shop .shop-cart{
+    /* background-color: blue; */
+    height: 76vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px 100px;
+}
+.shop .shop-cart .box{
+    width: 350px;
+    height: 466px;
+    /* background-color: greenyellow; */
+    overflow: hidden;
+}
+.shop .shop-cart .box .box01{
+    width: 350px;
+    height: 370px;
+    /* background-color: yellow; */
+    /* background-image: url); */
+    overflow: hidden;
+}
+.shop .shop-cart .box .box01 img{
+    width: 100%;
+    transition: 2s all ease;
+    position: relative;
+    z-index: 1;
+}
+.shop .shop-cart .box .box01:hover img{
+    scale: 1.1;
+}
+.shop .shop-cart .box .box01 .inner{
+    background-color: red;
+    color: white;
+    width: 350px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    bottom: 1.2%;
+    transition: 1s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.shop .shop-cart .box .box01:hover .inner{
+    bottom: 13%;
+}
+
+.shop .shop-cart .box .box02{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 3;
+}
+.shop .shop-cart .box .box02 h5{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.about{
+    height: 65vh;
+    /* background-color: red; */
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.about h6{
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .box{
+    width: 100;
+    height: 200px;
+    /* background-color: yellow; */
+    margin: 10px;
+    padding-left: 200px;
+    padding-right: 500px;
+    padding-top: 50px;
+    font-size: 10px;
+    overflow: hidden;
+}
+.about .box .heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+margin-bottom: 20px;
+}
+.about .box .heading hr{
+    width: 8%;
+  border-top: 3px solid red;
+    margin: 10px;
+
+}
+.about .box .heading h5{
+font-size: 2em;
+}
+.about .box  p{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    line-height: 26px;
+    }
+
+    /* blog */
+    .blog{
+        height: 84vh;
+        /* background-color: red; */
+        text-align: center;
+        overflow: hidden;
+    }
+    .blog h6{
+        font-family: sans-serif;
+        font-size: 2.5em;
+    }
+    .blog-box{
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .blog-box .box1{
+        width: 780px;
+        height: 500px;
+        /* background-color: blue; */
+        overflow: hidden;
+    }
+    .blog-box .box1 img{
+        width: 100%;
+        scale: 1.1;
+        transition: 1s all ease;
+    }
+    .blog-box .box1:hover img{
+        filter: brightness(80%);
+        scale: 1;
+    }
+    .blog-box .box{
+        width: 335px;
+        height: 500px;
+        /* background-color: blue; */
+        overflow: hidden;
+    }
+    .blog-box .box2 img{
+width: 100%;
+scale: 1.1;
+transition: 1s all ease;
+    }
+    .blog-box .box2:hover img{
+        filter: brightness(80%);
+        scale: 1;
+    }
+    .blog-box .box3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blog-box .box3 .inner-box1{
+        width: 335px;
+        height: 262px;
+        background-color: red;
+        overflow: hidden;
+        /* margin: px 0; */
+    }
+    .blog-box .box3 .inner-box1 img{
+        width: 100%;
+        scale: 1.1;
+        transition: 1s all ease;
+    }
+    .blog-box .box3 .inner-box1:hover img{
+        filter: brightness(80%);
+        scale: 1;
+    }
+
+
+    /*  pages*/
+    .pages{
+        /* background-color: red; */
+        height: 85vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    .pages .box{
+        width: 730px;
+        height: 85vh;
+        /* background-color: yellow; */
+    }
+  .pages .box1{
+padding: 230px 150px 190px 180px;
+font-size: 16px;
+/* background-color: red; */
+  }
+  .pages .box1 h6{
+    font-size: 3em;
+  }
+  .pages .box1 p{
+margin: 30px 0;
+font-size: .9em;
+line-height: 27px;
+  }
+  .pages .box1 button{
+    padding: 15px 20px;
+    font-size: .8em;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  .pages .box1 button:hover{
+    background-color: navy;
+  }
+  .pages .box2{
+    overflow: hidden;
+    padding: 70px 100px 100px 20px;
+  }
+  .pages .box2 img{
+    width: 90%;
+  }
+  .box-iii img{
+    margin-left: 90px;
+  }
+
+  /* contact */
+  .contact{
+    /* background-color: red; */
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+  }
+  .contact .box{
+    width: 50%;
+    height: 70vh;
+  }
+  .contact .box1{
+    /* background-color: yellow; */
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/01/44/hands-1866619_640.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .contact .box2{
+    /* background-color: blue; */
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 60px 150px 20px;
+  }
+
+  .contact .box2 h5{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact .box2 table{
+    /* width: 80%; */
+    /* background-color: red; */
+    padding-top: 40px;
+  }
+  .contact .box2 table tr td{
+   padding: 3px 0;
+  }
+  /* .contact .box2 table tr td label{
+  margin: 90px 0;
+  } */
+  .contact .box2 table tr td {
+    font-size: .9em;
+  }
+  .contact .box2 table tr td input{
+    height: 28px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    outline: none;
+  }
+  .contact .box2 table tr td input::placeholder{
+    padding-left: 10px;
+  }
+  .contact .box2 table .email{
+    width: 174%;
+  }
+  .contact .box2 table tr td button{
+    padding: 7px 30px;
+    font-size: 1em
+  }
+  .contact .box2 table tr td button:hover{
+    background-color:navy;
+    color: white;
+  }
+
+  @media (min-width:427px) and (max-width:769px) {
+    header img {
+        width: 100%;
+    }
+
+    header ul li {
+        padding: 40px 10px;
+    }
+
+    header ul li a {
+        font-size: .8em;
+    }
+
+    .flt {
+        left: 180px;
+        font-size: .6em;
+    }
+
+    /* main1 */
+    .main1 {
+        height: 82vh;
+        overflow: hidden;
+    }
+
+    .main1 .box1 {
+        width: 600px;
+        height: 82vh;
+        padding: 130px 20px 130px 50px;
+    }
+
+    .main1 .box1 h6 {
+        font-size: 1.8em;
+        padding-bottom: 20px;
+    }
+
+    .main1 .box1 p {
+        font-size: .6em;
+        line-height: 22px;
+        width: 90%;
+    }
+
+    .main1 .box1 button {
+        font-size: .9em;
+        margin-top: 10px;
+    }
+
+    .main1 .box2 {
+        height: 82vh;
+    }
+
+    .main1 .box2 img {
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    /* main 2 */
+    .shop .title {
+        padding: 0px 20px;
+    }
+
+    .shop .title ul li {
+        font-size: .8em;
+    }
+
+    .shop .shop-cart {
+        padding: 10px 30px;
+        height: 60vh;
+    }
+
+    .shop .shop-cart .box {
+        width: 200px;
+        height: 290px;
+    }
+
+    .shop .shop-cart .box .box01 {
+        width: 200px;
+    }
+
+    .shop .shop-cart .box .box01 .inner {
+        width: 200px;
+        height: 30px;
+        bottom: 1%;
+    }
+
+    .shop .shop-cart .box .box01:hover .inner {
+        bottom: 8%;
+    }
+
+    .shop .shop-cart .box .box02 {
+        margin-top: -156px;
+    }
+
+    .shop .shop-cart .box .box02 h5 {
+        font-size: .7em;
+        margin-bottom: 10px;
+    }
+
+    .shop .shop-cart .box .box02 p {
+        font-size: .7em;
+    }
+
+    .about {
+        height: 69vh;
+        margin-top: -170px;
+        /* background-color: red; */
+    }
+
+    .about h6 {
+        font-size: 1.6em;
+    }
+
+    .about .box {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 30px;
+    }
+
+    .about .box p {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+
+    .blog {
+        margin-top: -160px;
+        height: 53vh;
+    }
+
+    .blog-box {
+        margin-top: 010px;
+    }
+
+    .blog-box .box1 {
+        width: 600px;
+        height: 260px;
+        margin-right: 10px;
+    }
+    .blog-box .box{
+        width: 330px;
+        height: 260px;
+        margin-right: 10px;
+    }
+    
+    .blog-box .box3 .inner-box1{
+        width: 335px;
+        height: 130px;
+        margin-bottom: 10px;
+    }
+    .blog-box .box3 .inner-box1 img{
+        width: 99%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .pages{
+        height: 60vh;
+    }
+    .pages .box{
+        width: 730px;
+        height: 60vh;
+        /* background-color: yellow; */
+    }
+    .pages .box1{
+        padding: 70px 0px 10px 50px;
+        font-size: 16px;
+          }
+          .pages .box1 h6{
+            font-size: 2em;
+          }
+          .pages .box2{
+            overflow: hidden;
+            padding: 70px 100px 100px 20px;
+          }
+          .pages .box2 img{
+            width: 90%;
+          }
+          .pages .box2{
+            overflow: hidden;
+            padding: 40px 30px 50px 50px;
+          }
+          .pages .box2 img{
+            width: 100%;
+          }
+          .box-iii img{
+            margin-left: 10px;
+          }
+          /*  */
+          .contact{
+            height: 65vh;
+          }
+          .contact .box{
+            width: 50%;
+            height: 65vh;
+          }
+          .contact .box2{
+            padding: 10px 20px 20px;
+          }
+          .contact .box2 h5{
+            font-size: 2em;
+            margin-bottom: 0px;
+          }
+          .contact .box2 table{
+            padding-top: 50px;
+          }
+          .contact .box2 table tr td input{
+            margin-bottom: 30px;
+            margin-right: 10px;
+          }
+          .contact .box2 table .email{
+            width: 195%;
+          }
+}
+
+
+
+@media (min-width:320px) and (max-width:426px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header .icons {
+        display: none;
+    }
+
+    header .menu-bar {
+        display: block;
+    }
+
+    .main1 {
+        /* background-color: blue; */
+        height: 40vh;
+    }
+
+    .main1 .box1 {
+        width: 550px;
+        height: 35vh;
+        padding: 30px 10px 10px 20px;
+    }
+
+    .main1 .box1 h6 {
+        font-size: 1.2em;
+        padding-bottom: 10px;
+    }
+
+    .main1 .box1 p {
+        font-size: .5em;
+        padding-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .main1 .box1 button {
+        font-size: .6em;
+    }
+
+    .main1 .box2 {
+        width: 250px;
+        height: 40vh;
+    }
+
+    .main1 .box2 img {
+        width: 85%;
+        animation: watch 2s infinite linear alternate;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+
+
+    /* shop */
+    .shop .title {
+        padding: 0px 10px;
+    }
+
+    .shop .title ul li {
+        font-size: .45em;
+    }
+
+    .shop .title .page {
+        font-size: .9em;
+    }
+
+    .shop .shop-cart {
+        padding: 10px 30px;
+        height: 37vh;
+    }
+
+    .shop .shop-cart .box {
+        width: 90px;
+        height: 170px;
+        margin: 0px 5px;
+    }
+
+    .shop .shop-cart .box .box01 {
+        width: 90px;
+    }
+
+    .shop .shop-cart .box .box01 .inner {
+        width: 90px;
+        height: 30px;
+        bottom: 1%;
+        font-size: .6em;
+    }
+
+    .shop .shop-cart .box .box01:hover .inner {
+        bottom: 7%;
+    }
+
+    .shop .shop-cart .box .box02 {
+        margin-top: -272px;
+    }
+
+    .shop .shop-cart .box .box02 h5 {
+        font-size: .5em;
+        margin-bottom: 5px;
+    }
+
+    .shop .shop-cart .box .box02 p {
+        font-size: .4em;
+        margin-bottom: -10px;
+
+    }
+
+    .about {
+        height:68vh;
+        margin-top: -319px;
+        /* background-color: red; */
+    }
+
+    .about h6 {
+        font-size: 1.2em;
+    }
+
+    .about .box {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+    }
+
+    .about .box .heading h5 {
+        font-size: 1.5em;
+    }
+
+    .about .box p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+    .blog {
+        margin-top: -320px;
+        height: 30vh;
+        /* background-color: red; */
+    }
+    .blog h6{
+        font-size: 2em;
+    }
+ 
+    .blog-box {
+        margin-top: 10px;
+    }
+
+    .blog-box .box1 {
+        width: 600px;
+        height: 130px;
+        margin-right: 10px;
+    }
+    .blog-box .box{
+        width: 330px;
+        height: 130px;
+        margin-right: 10px;
+    }
+    
+    .blog-box .box3 .inner-box1{
+        width: 335px;
+        height: 130px;
+        margin-bottom: 3px;
+    }
+    .blog-box .box3 .inner-box1 img{
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .pages{
+        height: 38vh;
+    }
+    .pages .box{
+        width: 730px;
+        height: 20vh;
+        /* background-color: yellow; */
+        overflow: hidden;
+    }
+    .pages .box1{
+        padding: 80px 1px 10px 15px;
+        font-size: 16px;
+        overflow: hidden;
+        height: 10vh;
+        /* background-color: blue; */
+        overflow: hidden;
+          }
+          .pages .box1 h6{
+            margin-bottom: 30px;
+            font-size: 1.5em;
+          }
+          .pages .box1 p{
+            display: none;
+            /* font-size: .7em;
+            line-height: 20px;
+            margin-top: 10px; */
+          }
+          .pages .box1 button{
+            font-size: .6em;
+          }
+          .pages .box2{
+            /* background-color: greenyellow; */
+            overflow: hidden;
+            /* background-color: blue; */
+            /* padding: 70px 100px 100px 20px; */
+
+          }
+          .pages .box{
+            width: 730px;
+            height: 50vh;
+            /* background-color: yellow; */
+        }
+
+          .pages .box2{
+            overflow: hidden;
+            padding: 40px 10px 50px 0px;
+          }
+          .pages .box2 img{
+            width: 120%;
+          }
+          .box-iii img{
+            margin-left: 5px;
+          }
+          .contact{
+            margin-top: 40px;
+          }
+          .contact .box{
+            width: 100%;
+          }
+          .contact .box1{
+            height: 40vh;
+          }
+          .contact .box2{
+            padding: 30px 20px 0px;
+            overflow: hidden;
+          }
+          .contact .box2 h5{
+            font-size: 2.5em;
+            margin-bottom: 0px;
+          }
+          .contact .box2 table{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .contact .box2 table tr td{
+            font-size: .8em;
+          }
+          .contact .box2 table tr td input{
+            margin-bottom: 30px;
+            margin-right: 5px;
+          }
+          .contact .box2 table .email{
+            width: 196%;
+          }
+}
+    </style>
+</head>
+
+<body>
+    <!-- nav bar start-->
+    <header>
+        <div class="logo"><img src="https://preview.colorlib.com/theme/timezone/assets/img/logo/logo.png.webp" alt="">
+        </div>
+        <nav>
+            <ul>
+                <Li><a href="#home">Home</a></Li>
+                <Li><a href="#shop">shop</a></Li>
+                <Li><a href="#about">about</a></Li>
+                <Li><a href="#latest">latest</a></Li>
+                <div class="flt">
+                    <p>Hot</p>
+                </div>
+                <Li><a href="#blog">Blog</a></Li>
+                <Li><a href="#pages">Pages</a></Li>
+                <Li><a href="#contact">Contact</a></Li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-bag"></i>
+        </div>
+        <div class="menu-bar">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <!-- nav bar end -->
+
+    <!-- main1 start -->
+    <div class="main1" id="home">
+        <div class="box1">
+            <h6>Select Your New Perfect Style</h6>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat is aute irure.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="box2">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/hero/watch.png.webp" alt="">
+        </div>
+    </div>
+    <!-- main 1 end -->
+
+    <!-- shop start -->
+    <div class="shop" id="Shop">
+        <div class="title">
+            <ul>
+                <li>Newest Arrivals</li>
+                <li>Price High to Low</li>
+                <li>Most Popular</li>
+            </ul>
+            <div class="page">
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+
+        <div class="shop-cart">
+            <div class="box">
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular1.png.webp" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+                    </div>
+
+                </div>
+                <div class="box02">
+                    <h5>Thermo Ball</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular4.png.webp" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+
+                    </div>
+                </div>
+                <div class="box02">
+                    <h5>Etip Gloves</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular5.png.webp" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+                    </div>
+
+                </div>
+                <div class="box02">
+                    <h5>Ball Etip</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shop end -->
+    <!-- about us  start-->
+    <div class="about" id="about">
+        <h6>About Us</h6>
+        <div class="box">
+            <div class="heading">
+                <hr>
+                <h5>Our Mission</h5>
+            </div>
+            <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna aliqua. Quis
+                ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.
+                Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.</p>
+        </div>
+        <div class="box">
+            <div class="heading">
+                <hr>
+                <h5>Our Vision</h5>
+            </div>
+            <p>Consectetur adipiscing elit, sued do eiusmod tempor ididunt udfgt labore et dolore magna aliqua. Quis
+                ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.
+                Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus.</p>
+        </div>
+    </div>
+    <!-- about us end -->
+
+    <!-- shop start -->
+    <div class="shop" id="latest">
+        <div class="title">
+            <ul>
+                <li>Our Latest</li>
+                <li>50% Discount </li>
+                <li>Most Popular</li>
+            </ul>
+            <div class="page">
+                <i class="fa fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="shop-cart">
+            <div class="box">
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular2.png" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+                    </div>
+
+                </div>
+                <div class="box02">
+                    <h5>Thermo Ball</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular3.png" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+
+                    </div>
+                </div>
+                <div class="box02">
+                    <h5>Etip Gloves</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+            <div class="box">
+
+                <div class="box01">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/popular6.png" alt="">
+                    <div class="inner">
+                        <p>Add to Cart</p>
+                    </div>
+
+                </div>
+                <div class="box02">
+                    <h5>Ball Etip</h5>
+                    <p>$ 45,4582</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shop end -->
+
+
+    <!-- blog -->
+    <div class="blog" id="blog">
+        <h6>Blog</h6>
+        <div class="blog-box">
+            <div class="box1">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery1.png.webp" alt="">
+            </div>
+            <div class="box2 box">
+                <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery2.png.webp" alt="">
+            </div>
+            <div class="box3 box">
+                <div class="inner-box1">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery3.png.webp" alt="">
+                </div>
+                <div class="inner-box1">
+                    <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/gallery4.png.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pages -->
+    <div class="pages" id="pages">
+        <div class="box box1">
+            <h6>Watch of Choice</h6>
+            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <button>SHOW WATCHES</button>
+        </div>
+        <div class="box box2">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/choce_watch1.png" alt="">
+        </div>
+        
+    </div>
+    <div class="pages">
+        <div class="box box2 box-iii">
+            <img src="https://preview.colorlib.com/theme/timezone/assets/img/gallery/choce_watch1.png" alt="">
+        </div>
+        <div class="box box1">
+            <h6>Watch of Choice</h6>
+            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <button>SHOW WATCHES</button>
+        </div>
+        
+        
+    </div>  
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="box box1"></div>
+        <div class="box box2">
+            <h5>Register from</h5>
+            <table>
+                <tr>
+                    <td><label for="">First Name</label></td>
+                    <td><label for="">Last Name</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="First Name"></td>
+                    <td><input type="text" placeholder="Last Name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">
+                        Your Email
+                    </label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="email" class="email" placeholder="Demo@Gamil.com"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">
+                        Password
+                    </label></td>
+                    <td><label for="">Confirm Password</label></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="*******"></td>
+                    <td><input type="password" placeholder="*******"></td>
+                </tr>
+
+                <!-- <tr>
+                    <td><input type="checkbox" class="chekbox"><span>i agree to the Terms and Conditions</span></td>
+                </tr> -->
+                <tr>
+                    <td><button>Register</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
